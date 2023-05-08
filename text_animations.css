@@ -1,0 +1,50 @@
+.nav,
+.home_hero_subheading,
+.button,
+.about-us_main-paragraph,
+.company-section-title-logo,
+.splide_arrow-left,
+.splide_arrow-right,
+h1,
+h2,
+h3,
+p {
+  opacity: 0;
+  filter: blur(5px);
+  transition: transform 1.5s, blur 1.5s, opacity 1.5s, letter-spacing 0.05s;
+  transform: translateY(70%);
+}
+
+.nav {
+  transform: translateY(-100%);
+}
+
+h1 {
+  transform: translateY(-70%);
+}
+
+.company-section-title-logo,
+.splide_arrow-left,
+.splide_arrow-right {
+  transform: translate(-100%, 70%);
+}
+
+.home_sectors_title_overlay
+.home_sectors_p
+{
+  transition: transform: 0.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
